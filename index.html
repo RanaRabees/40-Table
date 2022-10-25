@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-style: italic;
+        }
+        body{
+            background-color: cadetblue;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            background-color: aquamarine;
+            text-align: center;
+            display: grid;
+            place-items: center;
+            box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+        table:hover{
+            border: 10px solid #2c2c2c;
+            background-color:darkkhaki;
+            box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12),
+            0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+        .heading{
+            color: chocolate;
+        }
+        .headings{
+            color: chartreuse;
+        }
+    </style>
+
+<body>
+    <center>
+    <table border="5" cellspacing="0">
+        <tr>
+            <th class="headings"colspan="6">Time Table</th>
+        </tr>
+        <tr class="heading">
+            <th rowspan="6"  class="heading">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Urdu</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>Islamic</td>
+            <td>English</td>
+            <td>Urdu</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="6"  class="heading">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Sports</td>
+            <td rowspan="2">Projects</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>Islamic</td>
+            <td>English</td>
+            <td>Urdu</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
